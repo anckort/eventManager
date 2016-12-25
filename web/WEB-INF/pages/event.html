@@ -31,16 +31,83 @@
         </div>
     </div>
     <div id="site_content">
-        <div id="content">
-            <div class="event">
-                <h2>Marilyn Manson</h2>
-                <div style="display: flex;">
-                    <div id="photo"><img
-                            src="https://s-media-cache-ak0.pinimg.com/originals/1f/e4/91/1fe4911748764ab2470bcaf6cd3eb85e.jpg"
-                            alt=""></div>
-                    <div id="maps">ddd</div>
+        <div class="event">
+            <div class="eventname"><h2>Event name</h2></div>
+            <div class="eventcontent">
+                <div id="map"></div>
+                <div class="eventinfo">
+                    <div class="eventphoto"><img src="https://i.ytimg.com/vi/57zi1RCIsjs/hqdefault.jpg"></div>
+                    <div class="eventdate">
+                        <table style="border-style: hidden">
+                            <tr>
+                                <th rowspan="2">
+                                    <svg style="width:24px;height:24px" viewBox="0 0 24 24">
+                                        <path fill="#FFFFFF"
+                                              d="M19,19H5V8H19M16,1V3H8V1H6V3H5C3.89,3 3,3.89 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V5C21,3.89 20.1,3 19,3H18V1M17,12H12V17H17V12Z"/>
+                                    </svg>
+                                </th>
+                                <td>55577854</td>
+                            </tr>
+                            <tr>
+                                <td>55577855</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="eventplace">
+                        <table style="border-style: hidden">
+                            <tr>
+                                <th>
+                                    <svg style="width:24px;height:24px" viewBox="0 0 24 24">
+                                        <path fill="#FFFFFF"
+                                              d="M12,2C15.31,2 18,4.66 18,7.95C18,12.41 12,19 12,19C12,19 6,12.41 6,7.95C6,4.66 8.69,2 12,2M12,6A2,2 0 0,0 10,8A2,2 0 0,0 12,10A2,2 0 0,0 14,8A2,2 0 0,0 12,6M20,19C20,21.21 16.42,23 12,23C7.58,23 4,21.21 4,19C4,17.71 5.22,16.56 7.11,15.83L7.75,16.74C6.67,17.19 6,17.81 6,18.5C6,19.88 8.69,21 12,21C15.31,21 18,19.88 18,18.5C18,17.81 17.33,17.19 16.25,16.74L16.89,15.83C18.78,16.56 20,17.71 20,19Z"/>
+                                    </svg>
+                                </th>
+                                <td>55577854</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="eventticket">
+                        <table style="border-style: hidden;">
+                            <tr>
+                                <th>
+                                    <svg style="width:24px;height:24px" viewBox="0 0 24 24">
+                                        <path fill="#FFFFFF"
+                                              d="M12,2A10,10 0 0,1 22,12A10,10 0 0,1 12,22A10,10 0 0,1 2,12A10,10 0 0,1 12,2M12,4A8,8 0 0,0 4,12A8,8 0 0,0 12,20A8,8 0 0,0 20,12A8,8 0 0,0 12,4M11,17V16H9V14H13V13H10A1,1 0 0,1 9,12V9A1,1 0 0,1 10,8H11V7H13V8H15V10H11V11H14A1,1 0 0,1 15,12V15A1,1 0 0,1 14,16H13V17H11Z"/>
+                                    </svg>
+                                </th>
+                                <td><a href="http://galaxystore.com.ua/" style="font-size: 15pt">Buy Tickets</a></td>
+                            </tr>
+                        </table>
+                    </div>
                 </div>
-                <div></div>
+                <script>
+                    function initMap() {
+                        var myLatLng = new google.maps.LatLng(41.850033, -87.8500523);
+
+                        var map = new google.maps.Map(document.getElementById('map'), {
+                            zoom: 18,
+                            center: myLatLng,
+                            disableDefaultUI: true,
+                        });
+
+                        var marker = new google.maps.Marker({
+                            position: myLatLng,
+                            map: map,
+                            title: 'Hello World!'
+                        });
+                    }
+                </script>
+                <script async defer
+                        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC3GCqLGOJpN_x9ozIOfCp-FxQY-WqM9fk&callback=initMap"></script>
+            </div>
+            <div class="aboutevent"><h2>Thank you, I tried it but the background of the table became transparent.. what
+                I meant was the 'background of the cells will became transparent'.... I tried creating a transparent
+                image in photoshop and set it the background-image but still, the cells are still white -.-Thank you, I
+                tried it but the background of the table became transparent.. what I meant was the 'background of the
+                cells will became transparent'.... I tried creating a transparent image in photoshop and set it the
+                background-image but still, the cells are still white -.-</h2></div>
+            <div class="eventtag">
+                <h2 style="color: rgba(255,255,255,0.68); font-size: 10pt; margin: 10px 10px 10px 10px;  ">Tag: Films, Music</h2>
             </div>
         </div>
     </div>
