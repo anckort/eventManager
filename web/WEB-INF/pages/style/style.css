@@ -243,6 +243,13 @@ ul#logreg li.selected a:hover {
     height: 100%;
 }
 
+#signUp {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
 #colours {
     height: 0px;
     text-align: right;
